@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>MoonX ($MOONX) – The Future of Crypto | Community-Driven Solana Token</title>
+<meta name="description" content="MoonX is a community-driven crypto token on Solana inspired by the vision of a self-sustaining decentralized ecosystem. Join the revolution. 0% tax, 1B supply." />
+<meta name="keywords" content="MoonX, MOONX, Solana token, crypto, community token, meme coin, DeFi, Web3, pump.fun" />
+<meta property="og:title" content="MoonX – The Future of Crypto 🌙" />
+<meta property="og:description" content="Community-driven Solana token built for long-term growth, transparency, and empowerment." />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="MoonX ($MOONX)" />
+<meta name="twitter:description" content="The Future of Crypto. Community-driven. 0% Tax. Built on Solana." />
+<link rel="canonical" href="https://moonxglobal.com/" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&family=Orbitron:wght@400;500;700;900&display=swap" rel="stylesheet" />
+<style>
+:root {
+  --navy: #0B1F3A;
+  --steel: #1E3A5F;
+  --bg: #050A12;
+  --bg2: #070D1A;
+  --silver: #C0C7D1;
+  --silver-soft: #E6EBF1;
+  --electric: #3A8DFF;
+  --electric-dim: rgba(58,141,255,0.15);
+  --electric-glow: rgba(58,141,255,0.35);
+  --white: #FFFFFF;
+  --text-body: #A8B4C8;
+  --glass-bg: rgba(14,28,52,0.6);
+  --glass-border: rgba(58,141,255,0.18);
+  --radius: 16px;
+  --radius-sm: 10px;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: 'DM Sans', sans-serif; background: var(--bg); color: var(--text-body); overflow-x: hidden; }
+a { text-decoration: none; color: inherit; }
+img { display: block; max-width: 100%; }
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--electric); border-radius: 3px; }
+
+.bg-stars {
+  position: fixed; inset: 0; z-index: 0; pointer-events: none;
+  background: radial-gradient(ellipse 80% 60% at 50% -10%, rgba(58,141,255,0.12) 0%, transparent 70%),
+              radial-gradient(ellipse 60% 40% at 80% 80%, rgba(11,31,58,0.5) 0%, transparent 60%);
+}
+.bg-stars::before {
+  content: '';
+  position: absolute; inset: 0;
+  background-image: radial-gradient(circle, rgba(255,255,255,0.8) 1px, transparent 1px),
+                    radial-gradient(circle, rgba(255,255,255,0.5) 1px, transparent 1px),
+                    radial-gradient(circle, rgba(58,141,255,0.9) 1px, transparent 1px);
+  background-size: 200px 200px, 300px 300px, 150px 150px;
+  background-position: 0 0, 100px 100px, 50px 50px;
+  animation: twinkle 8s ease-in-out infinite alternate;
+}
+@keyframes twinkle { 0% { opacity: 0.4; } 100% { opacity: 1; } }
+.content { position: relative; z-index: 1; }
+
+/* NAV */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  padding: 18px 5%;
+  display: flex; align-items: center; justify-content: space-between;
+  background: rgba(5,10,18,0.75);
+  backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(58,141,255,0.1);
+  transition: all 0.3s ease;
+}
+.nav-logo { display: flex; align-items: center; gap: 12px; }
+.nav-logo-circle {
+  width: 42px; height: 42px; border-radius: 50%; overflow: hidden;
+  border: 2px solid var(--electric);
+  box-shadow: 0 0 12px var(--electric-glow);
+  background: var(--navy);
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.nav-logo-circle img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
+.nav-logo-circle .logo-fallback { font-family: 'Orbitron', sans-serif; font-size: 14px; font-weight: 900; color: var(--electric); }
+.nav-brand { font-family: 'Orbitron', sans-serif; font-size: 18px; font-weight: 700; color: var(--white); letter-spacing: 2px; }
+.nav-links { display: flex; gap: 28px; list-style: none; }
+.nav-links a { font-size: 14px; font-weight: 500; color: var(--silver); transition: color 0.2s; letter-spacing: 0.5px; }
+.nav-links a:hover { color: var(--electric); }
+.nav-cta {
+  background: var(--electric) !important; color: var(--white) !important;
+  padding: 9px 20px; border-radius: 8px; font-weight: 600 !important;
+  box-shadow: 0 0 16px var(--electric-glow); transition: all 0.2s !important;
+}
+.nav-cta:hover { transform: translateY(-2px); box-shadow: 0 0 28px var(--electric-glow) !important; }
+
+/* HERO */
+#hero {
+  min-height: 100vh; display: flex; flex-direction: column;
+  align-items: center; justify-content: center; text-align: center;
+  padding: 120px 5% 80px; position: relative;
+}
+.hero-badge {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--glass-bg); border: 1px solid var(--glass-border);
+  border-radius: 999px; padding: 8px 20px; margin-bottom: 32px;
+  font-size: 13px; font-weight: 500; color: var(--electric); letter-spacing: 1px;
+  animation: fadeInDown 0.8s ease both; backdrop-filter: blur(12px);
+}
+.hero-badge span { color: var(--silver); }
+.hero-badge::before {
+  content: ''; width: 7px; height: 7px; border-radius: 50%;
+  background: var(--electric); animation: pulse-dot 2s infinite;
+}
+@keyframes pulse-dot { 0%, 100% { opacity: 1; transform: scale(1); } 50% { opacity: 0.5; transform: scale(1.4); } }
+.hero-logo-wrap {
+  position: relative; width: 150px; height: 150px;
+  margin: 0 auto 36px; animation: fadeInUp 0.8s 0.1s ease both;
+}
+.hero-logo-ring {
+  position: absolute; inset: -14px; border-radius: 50%;
+  border: 2px solid var(--electric);
+  box-shadow: 0 0 20px var(--electric-glow);
+  animation: spin 8s linear infinite;
+  clip-path: polygon(50% 0%, 100% 0%, 100% 30%, 50% 0%, 0% 30%, 0% 0%);
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+.hero-logo-inner {
+  width: 150px; height: 150px; border-radius: 50%; overflow: hidden;
+  border: 3px solid var(--electric);
+  box-shadow: 0 0 40px var(--electric-glow), 0 0 80px rgba(58,141,255,0.15);
+  background: var(--navy);
+  display: flex; align-items: center; justify-content: center;
+}
+.hero-logo-inner img { width: 100%; height: 100%; object-fit: cover; border-radius: 50%; }
+.hero-logo-inner .logo-fallback-lg { font-family: 'Orbitron', sans-serif; font-size: 42px; font-weight: 900; color: var(--electric); }
+.hero-title {
+  font-family: 'Sora', sans-serif; font-size: clamp(44px, 7vw, 88px);
+  font-weight: 800; line-height: 1.05; letter-spacing: -2px; color: var(--white);
+  margin-bottom: 8px; animation: fadeInUp 0.8s 0.2s ease both;
+}
+.hero-title .highlight {
+  background: linear-gradient(135deg, #3A8DFF 0%, #7BBFFF 50%, #C0D8FF 100%);
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+}
+.hero-ticker {
+  font-family: 'Orbitron', sans-serif; font-size: clamp(18px, 3vw, 28px);
+  font-weight: 700; color: var(--electric); letter-spacing: 4px;
+  margin-bottom: 24px; animation: fadeInUp 0.8s 0.3s ease both;
+}
+.hero-sub {
+  max-width: 600px; font-size: clamp(16px, 2vw, 19px); line-height: 1.7;
+  color: var(--silver); margin-bottom: 44px; animation: fadeInUp 0.8s 0.4s ease both;
+}
+.hero-btns { display: flex; gap: 16px; flex-wrap: wrap; justify-content: center; animation: fadeInUp 0.8s 0.5s ease both; }
+.btn-primary {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--electric); color: var(--white); padding: 14px 32px;
+  border-radius: var(--radius-sm); font-size: 15px; font-weight: 700; letter-spacing: 0.5px;
+  box-shadow: 0 0 24px var(--electric-glow); transition: all 0.25s; border: none; cursor: pointer;
+}
+.btn-primary:hover { transform: translateY(-3px); box-shadow: 0 0 40px var(--electric-glow), 0 8px 24px rgba(58,141,255,0.3); }
+.btn-secondary {
+  display: inline-flex; align-items: center; gap: 8px;
+  background: var(--glass-bg); color: var(--silver-soft); padding: 14px 32px;
+  border-radius: var(--radius-sm); font-size: 15px; font-weight: 600;
+  border: 1px solid var(--glass-border); backdrop-filter: blur(12px); transition: all 0.25s; cursor: pointer;
+}
+.btn-secondary:hover { border-color: var(--electric); color: var(--white); transform: translateY(-3px); }
+.hero-scroll {
+  position: absolute; bottom: 36px; left: 50%; transform: translateX(-50%);
+  display: flex; flex-direction: column; align-items: center; gap: 8px;
+  color: var(--silver); font-size: 12px; letter-spacing: 2px; animation: fadeIn 1s 1s both;
+}
+.hero-scroll-arrow { width: 20px; height: 34px; border: 2px solid rgba(58,141,255,0.4); border-radius: 10px; position: relative; }
+.hero-scroll-arrow::after {
+  content: ''; position: absolute; top: 6px; left: 50%; transform: translateX(-50%);
+  width: 4px; height: 8px; background: var(--electric); border-radius: 2px;
+  animation: scroll-dot 1.5s ease infinite;
+}
+@keyframes scroll-dot { 0% { top: 6px; opacity: 1; } 100% { top: 18px; opacity: 0; } }
+
+/* SECTIONS */
+section { padding: 100px 5%; }
+.section-label {
+  font-family: 'Orbitron', sans-serif; font-size: 11px; font-weight: 700;
+  letter-spacing: 4px; color: var(--electric); text-transform: uppercase;
+  margin-bottom: 12px; display: block;
+}
+.section-title { font-family: 'Sora', sans-serif; font-size: clamp(32px, 4vw, 52px); font-weight: 800; color: var(--white); line-height: 1.15; letter-spacing: -1px; }
+.section-sub { font-size: 17px; line-height: 1.7; color: var(--silver); max-width: 640px; margin-top: 16px; }
+.center { text-align: center; }
+.center .section-sub { margin-left: auto; margin-right: auto; }
+
+/* ABOUT */
+#about { background: linear-gradient(180deg, transparent, rgba(11,31,58,0.3) 50%, transparent); }
+.about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; max-width: 1100px; margin: 0 auto; }
+.about-text .section-sub { max-width: 100%; }
+.about-text p { margin-top: 20px; line-height: 1.8; color: var(--text-body); }
+.about-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.about-card {
+  background: var(--glass-bg); border: 1px solid var(--glass-border);
+  border-radius: var(--radius); padding: 24px; backdrop-filter: blur(16px); transition: all 0.3s;
+}
+.about-card:hover { transform: translateY(-4px); border-color: var(--electric); box-shadow: 0 8px 32px var(--electric-dim); }
+.about-card-icon { font-size: 28px; margin-bottom: 12px; }
+.about-card h4 { font-family: 'Sora', sans-serif; font-size: 14px; font-weight: 700; color: var(--white); margin-bottom: 8px; }
+.about-card p { font-size: 13px; line-height: 1.6; }
+
+/* ROADMAP */
+#roadmap { background: var(--bg2); }
+.roadmap-wrap { max-width: 900px; margin: 60px auto 0; position: relative; }
+.roadmap-line { position: absolute; left: 28px; top: 0; bottom: 0; width: 2px; background: linear-gradient(180deg, var(--electric), transparent); }
+.roadmap-item { display: flex; gap: 32px; margin-bottom: 48px; opacity: 0; transform: translateX(-30px); transition: all 0.6s ease; }
+.roadmap-item.visible { opacity: 1; transform: translateX(0); }
+.roadmap-dot {
+  width: 58px; height: 58px; flex-shrink: 0; border-radius: 50%;
+  background: var(--glass-bg); border: 2px solid var(--electric);
+  box-shadow: 0 0 16px var(--electric-glow);
+  display: flex; align-items: center; justify-content: center;
+  font-family: 'Orbitron', sans-serif; font-size: 11px; font-weight: 700;
+  color: var(--electric); letter-spacing: 1px; backdrop-filter: blur(10px);
+}
+.roadmap-content {
+  background: var(--glass-bg); border: 1px solid var(--glass-border);
+  border-radius: var(--radius); padding: 28px 32px; flex: 1;
+  backdrop-filter: blur(16px); transition: all 0.3s;
+}
+.roadmap-content:hover { border-color: rgba(58,141,255,0.4); box-shadow: 0 0 24px var(--electric-dim); }
+.roadmap-content h3 { font-family: 'Sora', sans-serif; font-size: 18px; font-weight: 700; color: var(--white); margin-bottom: 16px; }
+.roadmap-content ul { list-style: none; }
+.roadmap-content li { font-size: 14px; line-height: 1.7; color: var(--text-body); padding: 4px 0 4px 20px; position: relative; }
+.roadmap-content li::before { content: '▸'; position: absolute; left: 0; color: var(--electric); font-size: 12px; }
+
+/* TOKENOMICS */
+.token-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; max-width: 1100px; margin: 60px auto 0; }
+.token-card {
+  background: var(--glass-bg); border: 1px solid var(--glass-border);
+  border-radius: var(--radius); padding: 32px 24px; text-align: center;
+  backdrop-filter: blur(16px); transition: all 0.3s;
+  opacity: 0; transform: translateY(20px);
+}
+.token-card.visible { opacity: 1; transform: translateY(0); }
+.token-card:hover { transform: translateY(-6px); border-color: var(--electric); box-shadow: 0 8px 40px var(--electric-dim); }
+.token-card-pct { font-family: 'Orbitron', sans-serif; font-size: 36px; font-weight: 900; color: var(--electric); margin-bottom: 8px; line-height: 1; }
+.token-card-label { font-family: 'Sora', sans-serif; font-size: 14px; font-weight: 600; color: var(--white); margin-bottom: 8px; }
+.token-card-desc { font-size: 12px; color: var(--text-body); }
+.token-info-row { max-width: 1100px; margin: 32px auto 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
+.token-info-pill {
+  display: flex; align-items: center; gap: 14px;
+  background: var(--glass-bg); border: 1px solid var(--glass-border);
+  border-radius: var(--radius-sm); padding: 16px 20px; backdrop-filter: blur(12px);
+}
+.token-info-pill .pill-icon { font-size: 22px; }
+.token-info-pill .pill-val { font-family: 'Orbitron', sans-serif; font-size: 13px; font-weight: 700; color: var(--white); }
+.token-info-pill .pill-key { font-size: 12px; color: var(--text-body); margin-top: 2px; }
+
+/* CONTRACT */
+#contract {
+  background: linear-gradient(135deg, rgba(11,31,58,0.5), rgba(5,10,18,0.8));
+  border-top: 1px solid var(--glass-border); border-bottom: 1px solid var(--glass-border);
+}
+.ca-wrap { max-width: 700px; margin: 40px auto 0; text-align: center; }
+.ca-box {
+  background: var(--glass-bg); border: 1px solid var(--electric);
+  border-radius: var(--radius); padding: 20px 24px;
+  display: flex; align-items: center; justify-content: space-between; gap: 12px;
+  box-shadow: 0 0 24px var(--electric-dim); backdrop-filter: blur(16px); flex-wrap: wrap;
+}
+.ca-addr { font-family: 'Orbitron', sans-serif; font-size: 12px; color: var(--silver-soft); word-break: break-all; flex: 1; text-align: left; }
+.ca-copy {
+  background: var(--electric); color: var(--white); border: none; cursor: pointer;
+  padding: 10px 20px; border-radius: 8px; font-size: 13px; font-weight: 700;
+  transition: all 0.2s; white-space: nowrap;
+}
+.ca-copy:hover { box-shadow: 0 0 16px var(--electric-glow); transform: translateY(-2px); }
+
+/* LIVE CHART */
+#chart-section { padding: 80px 5%; background: var(--bg2); }
+.chart-wrap {
+  max-width: 1100px; margin: 40px auto 0;
+  background: var(--glass-bg); border: 1px solid var(--glass-border);
+  border-radius: var(--radius); overflow: hidden; backdrop-filter: blur(12px);
+  box-shadow: 0 0 40px var(--electric-dim); height: 520px;
+}
+.chart-wrap iframe { width: 100%; height: 100%; border: none; }
+
+/* COMMUNITY */
+#community { text-align: center; }
+.social-cards { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; max-width: 900px; margin: 56px auto 0; }
+.social-card {
+  display: flex; flex-direction: column; align-items: center; gap: 12px;
+  background: var(--glass-bg); border: 1px solid var(--glass-border);
+  border-radius: var(--radius); padding: 32px 40px; min-width: 180px;
+  backdrop-filter: blur(16px); transition: all 0.3s; color: var(--silver); cursor: pointer;
+}
+.social-card:hover { transform: translateY(-6px); border-color: var(--electric); box-shadow: 0 8px 32px var(--electric-dim); color: var(--white); }
+.social-icon { width: 48px; height: 48px; }
+.social-name { font-size: 15px; font-weight: 600; font-family: 'Sora', sans-serif; }
+
+/* CHATBOT */
+.chatbot-toggle {
+  position: fixed; bottom: 28px; right: 28px; z-index: 999;
+  width: 60px; height: 60px; border-radius: 50%; background: var(--electric);
+  box-shadow: 0 0 24px var(--electric-glow); border: none; cursor: pointer;
+  display: flex; align-items: center; justify-content: center; transition: all 0.25s;
+}
+.chatbot-toggle:hover { transform: scale(1.1); box-shadow: 0 0 40px var(--electric-glow); }
+.chatbot-toggle svg { width: 32px; height: 32px; stroke: white; fill: none; stroke-width: 1.8; }
+.chatbot-panel {
+  position: fixed; bottom: 100px; right: 28px; z-index: 998;
+  width: 380px; height: 560px;
+  background: rgba(5,10,18,0.97); border: 1px solid var(--glass-border);
+  border-radius: 20px; display: flex; flex-direction: column; overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.6), 0 0 40px var(--electric-dim);
+  backdrop-filter: blur(24px);
+  transform: scale(0.9) translateY(20px); opacity: 0; pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+.chatbot-panel.open { transform: scale(1) translateY(0); opacity: 1; pointer-events: all; }
+.chat-header {
+  padding: 16px 20px;
+  background: linear-gradient(135deg, var(--navy), var(--steel));
+  border-bottom: 1px solid var(--glass-border);
+  display: flex; align-items: center; gap: 12px;
+}
+.chat-header-dot { width: 8px; height: 8px; border-radius: 50%; background: #00ff88; animation: pulse-dot 2s infinite; }
+.chat-header h4 { font-family: 'Orbitron', sans-serif; font-size: 13px; font-weight: 700; color: var(--white); letter-spacing: 1px; flex: 1; }
+.chat-header-sub { font-size: 11px; color: var(--electric); }
+.chat-close { background: none; border: none; cursor: pointer; color: var(--silver); font-size: 18px; line-height: 1; transition: color 0.2s; }
+.chat-close:hover { color: var(--white); }
+.chat-messages { flex: 1; overflow-y: auto; padding: 16px; display: flex; flex-direction: column; gap: 12px; scrollbar-width: thin; scrollbar-color: var(--electric) transparent; }
+.chat-msg { max-width: 85%; line-height: 1.5; font-size: 14px; padding: 10px 14px; border-radius: 14px; animation: msgIn 0.3s ease; }
+@keyframes msgIn { from { opacity: 0; transform: translateY(8px); } }
+.chat-msg.bot { background: var(--glass-bg); border: 1px solid var(--glass-border); color: var(--silver-soft); border-radius: 4px 14px 14px 14px; align-self: flex-start; }
+.chat-msg.user { background: var(--electric); color: var(--white); border-radius: 14px 4px 14px 14px; align-self: flex-end; }
+.chat-typing { display: flex; gap: 4px; padding: 12px 14px; background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: 4px 14px 14px 14px; width: fit-content; }
+.chat-typing span { width: 6px; height: 6px; border-radius: 50%; background: var(--electric); animation: typing-bounce 1.2s infinite; }
+.chat-typing span:nth-child(2) { animation-delay: 0.2s; }
+.chat-typing span:nth-child(3) { animation-delay: 0.4s; }
+@keyframes typing-bounce { 0%, 80%, 100% { transform: translateY(0); } 40% { transform: translateY(-6px); } }
+.chat-footer { padding: 12px 16px; border-top: 1px solid var(--glass-border); display: flex; gap: 8px; }
+.chat-input {
+  flex: 1; background: var(--glass-bg); border: 1px solid var(--glass-border);
+  border-radius: 10px; padding: 10px 14px; color: var(--white); font-size: 14px;
+  font-family: 'DM Sans', sans-serif; outline: none; resize: none; transition: border-color 0.2s;
+}
+.chat-input:focus { border-color: var(--electric); }
+.chat-input::placeholder { color: var(--text-body); }
+.chat-send {
+  background: var(--electric); border: none; border-radius: 10px;
+  width: 42px; height: 42px; cursor: pointer; color: var(--white); font-size: 16px; flex-shrink: 0;
+  transition: all 0.2s; display: flex; align-items: center; justify-content: center;
+}
+.chat-send:hover { box-shadow: 0 0 14px var(--electric-glow); transform: scale(1.05); }
+.chat-send:disabled { opacity: 0.5; cursor: not-allowed; }
+
+/* FOOTER */
+footer { padding: 48px 5% 32px; border-top: 1px solid var(--glass-border); text-align: center; }
+.footer-logo { font-family: 'Orbitron', sans-serif; font-size: 22px; font-weight: 900; color: var(--white); letter-spacing: 3px; margin-bottom: 8px; }
+.footer-tagline { font-size: 14px; color: var(--text-body); margin-bottom: 24px; }
+.footer-links { display: flex; gap: 24px; justify-content: center; flex-wrap: wrap; margin-bottom: 24px; }
+.footer-links a { font-size: 13px; color: var(--silver); transition: color 0.2s; }
+.footer-links a:hover { color: var(--electric); }
+.footer-email { font-size: 13px; color: var(--text-body); margin-bottom: 24px; }
+.footer-email a { color: var(--electric); }
+.footer-legal { font-size: 12px; color: rgba(168,180,200,0.5); }
+
+/* ANIMATIONS */
+@keyframes fadeInDown { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes fadeInUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+.reveal { opacity: 0; transform: translateY(30px); transition: opacity 0.7s ease, transform 0.7s ease; }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+@media (max-width: 768px) {
+  nav { padding: 14px 4%; }
+  .nav-links { display: none; }
+  .about-grid { grid-template-columns: 1fr; }
+  .about-cards { grid-template-columns: 1fr; }
+  .chatbot-panel { width: calc(100vw - 32px); right: 16px; }
+  .ca-addr { font-size: 10px; }
+}
+</style>
+</head>
+<body>
+<div class="bg-stars"></div>
+<div class="content">
+
+<!-- NAV -->
+<nav id="navbar">
+  <div class="nav-logo">
+    <div class="nav-logo-circle">
+      <img src="moonx.png" alt="MoonX Logo" onerror="this.style.display='none';this.nextElementSibling.style.display='block';" />
+      <span class="logo-fallback" style="display:none;">MX</span>
+    </div>
+    <span class="nav-brand">MOONX</span>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#roadmap">Roadmap</a></li>
+    <li><a href="#tokenomics">Tokenomics</a></li>
+    <li><a href="#contract">Contract</a></li>
+    <li><a href="#community">Community</a></li>
+    <li><a href="https://pump.fun/coin/ob5FEJMdZ327izzVWhJoWsnEehZsRr1gaHpJWu4pump" target="_blank" rel="noopener" class="nav-cta">Buy $MOONX</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section id="hero">
+  <div class="hero-badge">
+    <span>🌙 Live on Solana</span> &nbsp;·&nbsp; 0% Tax &nbsp;·&nbsp; 1B Supply
+  </div>
+  <div class="hero-logo-wrap">
+    <div class="hero-logo-ring"></div>
+    <div class="hero-logo-inner">
+      <img src="moonx.png" alt="MoonX Logo" onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+      <span class="logo-fallback-lg" style="display:none;">MX</span>
+    </div>
+  </div>
+  <h1 class="hero-title">Welcome to <span class="highlight">MoonX</span></h1>
+  <div class="hero-ticker">$MOONX</div>
+  <p class="hero-sub">The Future of Crypto 🌙🚀 — A community-driven token on Solana inspired by the vision of building a self-sustaining decentralized ecosystem that thrives with community support and innovation.</p>
+  <div class="hero-btns">
+    <a href="https://pump.fun/coin/ob5FEJMdZ327izzVWhJoWsnEehZsRr1gaHpJWu4pump" target="_blank" rel="noopener" class="btn-primary">🚀 Buy $MOONX</a>
+    <a href="#about" class="btn-secondary">Learn More ↓</a>
+  </div>
+  <div class="hero-scroll">
+    <div class="hero-scroll-arrow"></div>
+    <span>SCROLL</span>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="about-grid">
+    <div class="about-text reveal">
+      <span class="section-label">About MoonX</span>
+      <h2 class="section-title">The Future is<br /><span style="color:var(--electric)">Community-Driven</span></h2>
+      <p>MoonX is a community-driven crypto token inspired by Elon Musk's vision of building a self-sustaining city on the Moon. Just as Elon aims to make humanity a multi-planetary species, we aim to create a self-growing, decentralized ecosystem that thrives with community support and innovation.</p>
+      <p style="margin-top:16px;">We believe in long-term growth, transparency, and empowerment. This isn't just another token; it's a movement. MoonX is built for those who are here to shape the future of crypto and be part of something bigger.</p>
+      <p style="margin-top:16px;"><strong style="color:var(--white)">Our Mission 🌙🔑</strong><br />MoonX is here to disrupt the crypto space with a vision that's about more than just trading tokens. It's about creating value, empowering people, and building a future driven by the community. Join us as we reach for the stars!</p>
+    </div>
+    <div class="about-cards reveal" style="transition-delay:0.15s">
+      <div class="about-card"><div class="about-card-icon">👥</div><h4>Community-Driven</h4><p>The strength of MoonX lies in the people. Together, we'll build something that lasts.</p></div>
+      <div class="about-card"><div class="about-card-icon">🌙</div><h4>Inspired by Elon's Vision</h4><p>Just like his goal to establish a city on the Moon, we're creating a self-sustaining token economy that grows over time.</p></div>
+      <div class="about-card"><div class="about-card-icon">📈</div><h4>Long-Term Focus</h4><p>MoonX is committed to sustainable growth and real value for our community, not short-term hype.</p></div>
+      <div class="about-card"><div class="about-card-icon">🔑</div><h4>Transparency</h4><p>Built on trust, openness, and community empowerment at every step of the journey.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ROADMAP -->
+<section id="roadmap"><div class="center reveal"><span class="section-label">The Journey</span><h2 class="section-title">MoonX Roadmap</h2><p class="section-sub">Five strategic phases designed to take MoonX from launch to global recognition and long-term sustainability.</p></div><div class="roadmap-wrap"><div class="roadmap-line"></div><div class="roadmap-item"><div class="roadmap-dot">P1</div><div class="roadmap-content"><h3>Phase 1 – Post-Launch Momentum</h3><ul><li>Build a strong, loyal, and active community</li><li>Consistent engagement through raids, content, and trends</li><li>Strengthen liquidity and grow holder confidence</li><li>Establish a bold and recognizable presence</li></ul></div></div><div class="roadmap-item"><div class="roadmap-dot">P2</div><div class="roadmap-content"><h3>Phase 2 – Growth &amp; Visibility</h3><ul><li>Secure listings on major tracking platforms (CMC / CG)</li><li>Form strategic partnerships and key collaborations</li><li>Expand global reach across all social channels</li><li>Launch high-impact community campaigns</li></ul></div></div><div class="roadmap-item"><div class="roadmap-dot">P3</div><div class="roadmap-content"><h3>Phase 3 – Expansion</h3><ul><li>Pursue centralized exchange (CEX) listings</li><li>Execute large-scale marketing campaigns</li><li>Collaborate with influential voices in the space</li><li>Strengthen and solidify the holder base</li></ul></div></div><div class="roadmap-item"><div class="roadmap-dot">P4</div><div class="roadmap-content"><h3>Phase 4 – Global Reach 🌍</h3><ul><li>Scale MoonX into a globally recognized brand</li><li>Dominate trends with viral, high-quality campaigns</li><li>Expand into key international markets</li><li>Continue building a powerful, engaged community</li></ul></div></div><div class="roadmap-item"><div class="roadmap-dot">P5</div><div class="roadmap-content"><h3>Phase 5 – Moon Mission 🌕</h3><ul><li>Sustain long-term momentum and growth</li><li>Cement MoonX as a leading community-driven project</li><li>Evolve with new opportunities as they arise</li><li>Continue pushing the vision forward</li><li>Explore the introduction of utility as the ecosystem matures</li></ul></div></div></div></section>
+
+<!-- TOKENOMICS -->
+<section id="tokenomics"><div class="center reveal"><span class="section-label">Distribution</span><h2 class="section-title">Tokenomics</h2><p class="section-sub">Designed for long-term sustainability, community empowerment, and zero friction trading.</p></div><div class="token-grid"><div class="token-card"><div class="token-card-pct">70%</div><div class="token-card-label">Liquidity</div><div class="token-card-desc">Locked liquidity ensuring price stability and holder confidence</div></div><div class="token-card"><div class="token-card-pct">15%</div><div class="token-card-label">Marketing &amp; Partnerships</div><div class="token-card-desc">Fueling growth, visibility campaigns and strategic collaborations</div></div><div class="token-card"><div class="token-card-pct">10%</div><div class="token-card-label">Team &amp; Dev</div><div class="token-card-desc">Sustained development, operations and future innovation</div></div><div class="token-card"><div class="token-card-pct">5%</div><div class="token-card-label">Community</div><div class="token-card-desc">Rewards, events and incentives for the MoonX community</div></div><div class="token-card"><div class="token-card-pct">0%</div><div class="token-card-label">Tax</div><div class="token-card-desc">Zero buy/sell tax — frictionless trading for everyone</div></div></div><div class="token-info-row reveal"><div class="token-info-pill"><div class="pill-icon">⛓️</div><div><div class="pill-val">Solana (SOL)</div><div class="pill-key">Blockchain</div></div></div><div class="token-info-pill"><div class="pill-icon">💎</div><div><div class="pill-val">1,000,000,000</div><div class="pill-key">Total Supply</div></div></div><div class="token-info-pill"><div class="pill-icon">🏷️</div><div><div class="pill-val">$MOONX</div><div class="pill-key">Ticker</div></div></div><div class="token-info-pill"><div class="pill-icon">✅</div><div><div class="pill-val">0% Tax</div><div class="pill-key">Buy / Sell Tax</div></div></div></div></section>
+
+<!-- CONTRACT -->
+<section id="contract"><div class="center reveal"><span class="section-label">On-Chain</span><h2 class="section-title">Contract Address</h2><p class="section-sub">Always verify the contract address before purchasing. This is the official and only $MOONX token contract on Solana.</p></div><div class="ca-wrap reveal"><div class="ca-box"><div class="ca-addr" id="caText">ob5FEJMdZ327izzVWhJoWsnEehZsRr1gaHpJWu4pump</div><button class="ca-copy" onclick="copyCA()">Copy</button></div><p style="margin-top:16px; font-size:13px; color:var(--text-body);">⚠️ Always double-check this address. Never trust any other contract shared in DMs or social media.</p></div></section>
+
+<!-- LIVE CHART -->
+<section id="chart-section"><div class="center reveal"><span class="section-label">Real-Time</span><h2 class="section-title">Live Price Chart</h2><p class="section-sub">Track $MOONX price action in real time directly below.</p></div><div class="chart-wrap reveal"><iframe src="https://dexscreener.com/solana/2BD9g7FPSjVK8sMNNWadf5Y45hQhd4kt9F6aQT8TZ3YJ?embed=1&theme=dark&trades=0&info=0" title="MoonX Live Price Chart on Solana" loading="lazy" allowfullscreen></iframe></div></section>
+
+<!-- COMMUNITY (PUMP.FUN CARD REMOVED) -->
+<section id="community"><div class="center reveal"><span class="section-label">Join Us</span><h2 class="section-title">Join the MoonX Revolution 🚀✨</h2><p class="section-sub">Are you ready to be part of the next big thing in crypto? Together, we'll build something that stands the test of time. The MoonX journey is just beginning, and we want YOU to be part of it.</p></div><div class="social-cards"><a href="https://x.com/MoonXGlobal" target="_blank" rel="noopener" class="social-card reveal"><svg class="social-icon" viewBox="0 0 24 24" fill="none"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77z" fill="currentColor"/></svg><span class="social-name">Twitter / X</span></a><a href="https://t.me/MoonXOfficial2" target="_blank" rel="noopener" class="social-card reveal"><svg class="social-icon" viewBox="0 0 24 24" fill="none"><path d="M11.944 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0a12 12 0 0 0-.056 0zm4.962 7.224c.1-.002.321.023.465.14a.506.506 0 0 1 .171.325c.016.093.036.306.02.472-.18 1.898-.96 6.502-1.36 8.627-.168.9-.499 1.201-.82 1.23-.696.065-1.225-.46-1.9-.902-1.056-.693-1.653-1.124-2.678-1.8-1.185-.78-.417-1.21.258-1.91.177-.184 3.247-2.977 3.307-3.23.007-.032.014-.15-.056-.212s-.174-.041-.249-.024c-.106.024-1.793 1.14-5.061 3.345-.48.33-.913.49-1.302.48-.428-.008-1.252-.241-1.865-.44-.752-.245-1.349-.374-1.297-.789.027-.216.325-.437.893-.663 3.498-1.524 5.83-2.529 6.998-3.014 3.332-1.386 4.025-1.627 4.476-1.635z" fill="currentColor"/></svg><span class="social-name">Telegram</span></a><a href="mailto:moonx.support@gmail.com" class="social-card reveal"><svg class="social-icon" viewBox="0 0 24 24" fill="none"><rect x="2" y="4" width="20" height="16" rx="2.5" stroke="currentColor" stroke-width="1.8"/><path d="M2 7.5l10 6.5 10-6.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span class="social-name">Email Support</span></a></div></section>
+
+<footer><div class="footer-logo">MOONX</div><p class="footer-tagline">The Future of Crypto 🌙 — Community Driven. Built on Solana.</p><div class="footer-links"><a href="#about">About</a><a href="#roadmap">Roadmap</a><a href="#tokenomics">Tokenomics</a><a href="#contract">Contract</a><a href="https://x.com/MoonXGlobal" target="_blank">Twitter / X</a><a href="https://t.me/MoonXOfficial2" target="_blank">Telegram</a><a href="https://pump.fun/coin/ob5FEJMdZ327izzVWhJoWsnEehZsRr1gaHpJWu4pump" target="_blank">Pump.fun</a></div><p class="footer-email">Support: <a href="mailto:moonx.support@gmail.com">moonx.support@gmail.com</a></p><p class="footer-legal">© 2026 MoonX. This is not financial advice. Cryptocurrency investments carry risk. Always do your own research (DYOR).</p></footer>
+
+</div>
+
+<!-- CHATBOT TOGGLE with better icon -->
+<button class="chatbot-toggle" onclick="toggleChat()" aria-label="MoonX AI Chatbot">
+  <svg viewBox="0 0 24 24" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 0 1 10 10c0 4.4-2.8 8.1-6.7 9.5L12 22l-3.3-.5C4.8 20.1 2 16.4 2 12A10 10 0 0 1 12 2z"/><path d="M8 12h.01M12 12h.01M16 12h.01"/></svg>
+</button>
+
+<div class="chatbot-panel" id="chatPanel">
+  <div class="chat-header"><div class="chat-header-dot"></div><div><h4>MoonX AI Assistant</h4><div class="chat-header-sub">Powered by MoonX knowledge</div></div><button class="chat-close" onclick="toggleChat()">✕</button></div>
+  <div class="chat-messages" id="chatMessages"><div class="chat-msg bot">🌙 Hey MoonWalker! I'm your MoonX AI. Ask me anything about $MOONX — tokenomics, roadmap, contract, how to buy, or our mission. Let's go to the moon! 🚀</div></div>
+  <div class="chat-footer"><textarea class="chat-input" id="chatInput" placeholder="Ask about $MOONX..." rows="1" onkeydown="handleKey(event)"></textarea><button class="chat-send" id="chatSend" onclick="sendMessage()"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><path d="M22 2L11 13M22 2L15 22l-4-9-9-4 20-7z"/></svg></button></div>
+</div>
+
+<script>
+// Intersection observer
+const observer = new IntersectionObserver((entries) => { entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }); }, { threshold: 0.1 });
+document.querySelectorAll('.reveal, .roadmap-item, .token-card').forEach(el => observer.observe(el));
+function copyCA() { navigator.clipboard.writeText('ob5FEJMdZ327izzVWhJoWsnEehZsRr1gaHpJWu4pump').then(() => { const btn = document.querySelector('.ca-copy'); btn.textContent = '✓ Copied!'; btn.style.background = '#00c853'; setTimeout(() => { btn.textContent = 'Copy'; btn.style.background = ''; }, 2000); }); }
+window.addEventListener('scroll', () => { document.getElementById('navbar').style.background = window.scrollY > 60 ? 'rgba(5,10,18,0.97)' : 'rgba(5,10,18,0.75)'; });
+
+// CHATBOT LOGIC - local knowledge base (fully responsive, no external API)
+let chatOpen = false;
+function toggleChat() { chatOpen = !chatOpen; document.getElementById('chatPanel').classList.toggle('open', chatOpen); }
+function handleKey(e) { if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); sendMessage(); } }
+
+const KNOWLEDGE = {
+  tokenomics: "📊 *Tokenomics*: Total supply 1B $MOONX. 70% liquidity (locked), 15% marketing/partnerships, 10% team/dev, 5% community rewards. 0% buy/sell tax. Built on Solana for frictionless trading!",
+  tax: "✅ $MOONX has 0% tax on both buys and sells. No hidden fees, just pure community-driven trading on Solana.",
+  supply: "💎 Total supply is 1,000,000,000 (1 Billion) $MOONX tokens.",
+  contract: "🔐 Official contract address: `ob5FEJMdZ327izzVWhJoWsnEehZsRr1gaHpJWu4pump` on Solana. Always verify!",
+  buy: "🛒 You can buy $MOONX on Pump.fun: https://pump.fun/coin/ob5FEJMdZ327izzVWhJoWsnEehZsRr1gaHpJWu4pump . Connect your Solana wallet (Phantom, Solflare) and swap SOL for MOONX.",
+  roadmap: "🗺️ MoonX roadmap has 5 phases: 1) Post-Launch Momentum, 2) Growth & Visibility (CMC/CG), 3) Expansion (CEX), 4) Global Reach, 5) Moon Mission & utility. Check the website for full details!",
+  mission: "🌙 Our mission: create a self-sustaining decentralized ecosystem inspired by Elon's Moon city vision. Long-term growth, transparency, community empowerment.",
+  liquidity: "🔒 70% of supply is locked as liquidity, ensuring price stability and holder confidence.",
+  community: "👥 Join our community: Twitter: @MoonXGlobal, Telegram: t.me/MoonXOfficial2. Be part of the revolution!",
+  twitter: "🐦 Follow us on X (Twitter): https://x.com/MoonXGlobal",
+  telegram: "💬 Join Telegram: https://t.me/MoonXOfficial2",
+  support: "📧 Email support: moonx.support@gmail.com",
+  chart: "📈 Live chart on DexScreener: https://dexscreener.com/solana/2BD9g7FPSjVK8sMNNWadf5Y45hQhd4kt9F6aQT8TZ3YJ",
+  price: "💹 I can't give price predictions, but you can track live price on DexScreener or Pump.fun. Always DYOR!",
+  phase: (query) => { if (query.includes('1') || query.includes('one')) return "🚀 Phase 1: Building strong community, raids, content, strengthen liquidity, establish presence."; if (query.includes('2') || query.includes('two')) return "📈 Phase 2: CMC/CG listings, strategic partnerships, global reach, community campaigns."; if (query.includes('3') || query.includes('three')) return "🌍 Phase 3: CEX listings, large-scale marketing, influencer collaborations, strengthen holder base."; if (query.includes('4') || query.includes('four')) return "🏆 Phase 4: Global recognition, viral campaigns, international market expansion."; if (query.includes('5') || query.includes('five')) return "🌕 Phase 5: Sustain momentum, cement as leading project, explore utility, evolve."; return null; }
+};
+
+function getBotResponse(userMsg) {
+  const msg = userMsg.toLowerCase().trim();
+  if (msg.match(/hello|hi|hey|greetings/)) return "🌙 Hello MoonWalker! Ready to explore MoonX? Ask me about tokenomics, roadmap, or how to buy $MOONX! 🚀";
+  if (msg.match(/tokenomics|allocation|distribution|breakdown/)) return KNOWLEDGE.tokenomics;
+  if (msg.match(/tax|fee|0%|zero tax/)) return KNOWLEDGE.tax;
+  if (msg.match(/supply|total supply|max supply|1b/)) return KNOWLEDGE.supply;
+  if (msg.match(/contract|ca|address|verify/)) return KNOWLEDGE.contract;
+  if (msg.match(/how to buy|buy|purchase|swap|where to buy/)) return KNOWLEDGE.buy;
+  if (msg.match(/roadmap|phases|phase|plan|future/)) return KNOWLEDGE.roadmap;
+  if (msg.match(/mission|vision|goal|purpose/)) return KNOWLEDGE.mission;
+  if (msg.match(/liquidity|locked/)) return KNOWLEDGE.liquidity;
+  if (msg.match(/community|join|social/)) return KNOWLEDGE.community;
+  if (msg.match(/twitter|x/)) return KNOWLEDGE.twitter;
+  if (msg.match(/telegram|tg/)) return KNOWLEDGE.telegram;
+  if (msg.match(/support|email|contact/)) return KNOWLEDGE.support;
+  if (msg.match(/chart|price|dexscreener|live price/)) return KNOWLEDGE.price;
+  if (msg.match(/phase \d|phase one|phase two|phase three|phase four|phase five|phase 1|phase 2|phase 3|phase 4|phase 5/)) {
+    let phaseAns = KNOWLEDGE.phase(msg);
+    if (phaseAns) return phaseAns;
+    return "🗺️ Here's the roadmap summary: Phase 1 (launch momentum), Phase 2 (growth), Phase 3 (CEX expansion), Phase 4 (global reach), Phase 5 (Moon mission). Ask for a specific phase number!";
+  }
+  if (msg.match(/team|dev|developer/)) return "👨‍💻 The MoonX team is dedicated to long-term growth and transparency. 10% allocation for development ensures continuous innovation and operational sustainability.";
+  if (msg.match(/pump\.fun|pumpfun/)) return "🚀 You can buy $MOONX directly on Pump.fun: https://pump.fun/coin/ob5FEJMdZ327izzVWhJoWsnEehZsRr1gaHpJWu4pump";
+  if (msg.match(/thanks|thank you|appreciate|ty/)) return "You're welcome! Together we reach the moon 🌙✨. Ask anything else!";
+  return "🌙 I'm here to help with all things MoonX! You can ask about: tokenomics, roadmap phases, contract address, how to buy, tax (0%), supply, social links, or our mission. What would you like to know? 🚀";
+}
+
+async function sendMessage() {
+  const input = document.getElementById('chatInput');
+  const msg = input.value.trim();
+  if (!msg) return;
+  addMsg(msg, 'user');
+  input.value = '';
+  const sendBtn = document.getElementById('chatSend');
+  sendBtn.disabled = true;
+  const typingEl = addTyping();
+  setTimeout(() => {
+    typingEl.remove();
+    const reply = getBotResponse(msg);
+    addMsg(reply, 'bot');
+    sendBtn.disabled = false;
+  }, 400);
+}
+
+function addMsg(text, type) {
+  const msgs = document.getElementById('chatMessages');
+  const el = document.createElement('div');
+  el.className = `chat-msg ${type}`;
+  el.textContent = text;
+  msgs.appendChild(el);
+  msgs.scrollTop = msgs.scrollHeight;
+  return el;
+}
+function addTyping() {
+  const msgs = document.getElementById('chatMessages');
+  const el = document.createElement('div');
+  el.className = 'chat-typing';
+  el.innerHTML = '<span></span><span></span><span></span>';
+  msgs.appendChild(el);
+  msgs.scrollTop = msgs.scrollHeight;
+  return el;
+}
+</script>
+</body>
+  </html>
