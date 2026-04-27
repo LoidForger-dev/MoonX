@@ -436,7 +436,7 @@ footer { padding: 48px 5% 32px; border-top: 1px solid var(--glass-border); text-
     <li><a href="#tokenomics">Tokenomics</a></li>
     <li><a href="#contract">Contract</a></li>
     <li><a href="#community">Community</a></li>
-    <li><a href="https://pump.fun/coin/ob5FEJMdZ327izzVWhJoWsnEehZsRr1gaHpJWu4pump" target="_blank" rel="noopener" class="nav-cta">Buy $MOONX</a></li>
+    <li><a href="https://pump.fun/coin/CFR1uytUx9MGtD242FSacqJCHJ42Mezjmhkf6gupump" target="_blank" rel="noopener" class="nav-cta">Buy $MOONX</a></li>
   </ul>
 </nav>
 
@@ -510,7 +510,7 @@ footer { padding: 48px 5% 32px; border-top: 1px solid var(--glass-border); text-
   </div>
 </div>
 
-<!-- FOOTER (copyright 2026) -->
+<!-- FOOTER -->
 <footer>
   <div class="footer-logo">MOONX</div>
   <p class="footer-tagline">The Future of Crypto 🌙 — Community Driven. Built on Solana.</p>
@@ -521,7 +521,7 @@ footer { padding: 48px 5% 32px; border-top: 1px solid var(--glass-border); text-
     <a href="#contract">Contract</a>
     <a href="https://x.com/MoonXGlobal" target="_blank">Twitter / X</a>
     <a href="https://t.me/MoonXOfficial2" target="_blank">Telegram</a>
-    <a href="https://pump.fun/coin/ob5FEJMdZ327izzVWhJoWsnEehZsRr1gaHpJWu4pump" target="_blank">Pump.fun</a>
+    <a href="https://pump.fun/coin/CFR1uytUx9MGtD242FSacqJCHJ42Mezjmhkf6gupump" target="_blank">Pump.fun</a>
   </div>
   <p class="footer-email">Support: <a href="mailto:moonx.support@gmail.com">moonx.support@gmail.com</a></p>
   <p class="footer-legal">© 2026 MoonX. This is not financial advice. Cryptocurrency investments carry risk. Always do your own research (DYOR).</p>
@@ -544,7 +544,7 @@ footer { padding: 48px 5% 32px; border-top: 1px solid var(--glass-border); text-
 // Intersection observer
 const observer = new IntersectionObserver((entries) => { entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); }); }, { threshold: 0.1 });
 document.querySelectorAll('.reveal, .roadmap-item, .token-card').forEach(el => observer.observe(el));
-function copyCA() { navigator.clipboard.writeText('ob5FEJMdZ327izzVWhJoWsnEehZsRr1gaHpJWu4pump').then(() => { const btn = document.querySelector('.ca-copy'); btn.textContent = '✓ Copied!'; btn.style.background = '#00c853'; setTimeout(() => { btn.textContent = 'Copy'; btn.style.background = ''; }, 2000); }); }
+function copyCA() { navigator.clipboard.writeText('CFR1uytUx9MGtD242FSacqJCHJ42Mezjmhkf6gupump').then(() => { const btn = document.querySelector('.ca-copy'); btn.textContent = '✓ Copied!'; btn.style.background = '#00c853'; setTimeout(() => { btn.textContent = 'Copy'; btn.style.background = ''; }, 2000); }); }
 window.addEventListener('scroll', () => { document.getElementById('navbar').style.background = window.scrollY > 60 ? 'rgba(5,10,18,0.97)' : 'rgba(5,10,18,0.75)'; });
 
 // CHATBOT LOGIC - local knowledge base (fully responsive)
@@ -556,8 +556,8 @@ const KNOWLEDGE = {
   tokenomics: "📊 *Tokenomics*: Total supply 1B $MOONX. 70% liquidity (locked), 15% marketing/partnerships, 10% team/dev, 5% community rewards. 0% buy/sell tax. Built on Solana for frictionless trading!",
   tax: "✅ $MOONX has 0% tax on both buys and sells. No hidden fees, just pure community-driven trading on Solana.",
   supply: "💎 Total supply is 1,000,000,000 (1 Billion) $MOONX tokens.",
-  contract: "🔐 Official contract address: `ob5FEJMdZ327izzVWhJoWsnEehZsRr1gaHpJWu4pump` on Solana. Always verify!",
-  buy: "🛒 You can buy $MOONX on Pump.fun: https://pump.fun/coin/ob5FEJMdZ327izzVWhJoWsnEehZsRr1gaHpJWu4pump . Connect your Solana wallet (Phantom, Solflare) and swap SOL for MOONX.",
+  contract: "🔐 Official contract address: `CFR1uytUx9MGtD242FSacqJCHJ42Mezjmhkf6gupump` on Solana. Always verify!",
+  buy: "🛒 You can buy $MOONX on Pump.fun: https://pump.fun/coin/CFR1uytUx9MGtD242FSacqJCHJ42Mezjmhkf6gupump . Connect your Solana wallet (Phantom, Solflare) and swap SOL for MOONX.",
   roadmap: "🗺️ MoonX roadmap has 5 phases: 1) Post-Launch Momentum, 2) Growth & Visibility (CMC/CG), 3) Expansion (CEX), 4) Global Reach, 5) Moon Mission & utility. Check the website for full details!",
   mission: "🌙 Our mission: create a self-sustaining decentralized ecosystem inspired by Elon's Moon city vision. Long-term growth, transparency, community empowerment.",
   liquidity: "🔒 70% of supply is locked as liquidity, ensuring price stability and holder confidence.",
@@ -592,7 +592,7 @@ function getBotResponse(userMsg) {
     return "🗺️ Here's the roadmap summary: Phase 1 (launch momentum), Phase 2 (growth), Phase 3 (CEX expansion), Phase 4 (global reach), Phase 5 (Moon mission). Ask for a specific phase number!";
   }
   if (msg.match(/team|dev|developer/)) return "👨‍💻 The MoonX team is dedicated to long-term growth and transparency. 10% allocation for development ensures continuous innovation and operational sustainability.";
-  if (msg.match(/pump\.fun|pumpfun/)) return "🚀 You can buy $MOONX directly on Pump.fun: https://pump.fun/coin/ob5FEJMdZ327izzVWhJoWsnEehZsRr1gaHpJWu4pump";
+  if (msg.match(/pump\.fun|pumpfun/)) return "🚀 You can buy $MOONX directly on Pump.fun: https://pump.fun/coin/CFR1uytUx9MGtD242FSacqJCHJ42Mezjmhkf6gupump";
   if (msg.match(/thanks|thank you|appreciate|ty/)) return "You're welcome! Together we reach the moon 🌙✨. Ask anything else!";
   return "🌙 I'm here to help with all things MoonX! You can ask about: tokenomics, roadmap phases, contract address, how to buy, tax (0%), supply, social links, or our mission. What would you like to know? 🚀";
 }
